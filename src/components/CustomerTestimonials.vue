@@ -79,6 +79,10 @@
 
 <script>
 import { ref } from "vue";
+import user1 from "/src/assets/img/user1.jpg";
+import user2 from "/src/assets/img/user2.jpg";
+import user3 from "/src/assets/img/user3.jpg";
+
 export default {
   setup() {
     const testimonials = ref([
@@ -86,21 +90,21 @@ export default {
         customer_name: "Lorem ipsum S.",
         comment:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non ipsum porttitor mauris scelerisque vulputate sit amet eu lacus. Pellentesque pellentesque magna sed elit hendrerit...",
-        image: "/@/assets/img/user1.jpg",
+        image: user1,
         video: "",
       },
       {
         customer_name: "Lorem ipsum K.",
         comment:
           "Sed scelerisque hendrerit ullamcorper. Maecenas id nibh dictum, rhoncus justo ut, hendrerit libero. Fusce euismod enim sed tempus suscipit...",
-        image: "/@/assets/img/user2.jpg",
+        image: user2,
         video: "",
       },
       {
         customer_name: "Lorem ipsum M.",
         comment:
           "Ut accumsan convallis congue. Morbi luctus dui gravida, posuere nulla ac, tempor libero. Sed tincidunt leo eget dui sagittis, sit amet efficitur mauris egestas...",
-        image: "/@/assets/img/user3.jpg",
+        image: user3,
         video: "",
       },
     ]);
