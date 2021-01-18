@@ -1,7 +1,9 @@
 import * as path from 'path'
+import vue from '@vitejs/plugin-vue'
 
 export default {
-    alias: { '/@/': path.resolve(__dirname, './src'), },
+    plugins: [vue()],
+    alias: { '/@': path.resolve(__dirname, './src'), },
     rollupPluginVueOptions: {
         transformAssetUrls: {
             img: ['src', 'data-src'],
